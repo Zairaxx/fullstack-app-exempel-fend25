@@ -1,0 +1,81 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "firstName": "Anna",
+      "lastName": "Andersson",
+      "age": 22,
+      "email": "anna.andersson@ankademin.se"
+    },
+    {
+      "id": "2",
+      "firstName": "Erik",
+      "lastName": "Johansson",
+      "age": 24,
+      "email": "erik.johansson@ankademin.se"
+    },
+    {
+      "id": "3",
+      "firstName": "Sara",
+      "lastName": "Nilsson",
+      "age": 21,
+      "email": "sara.nilsson@ankademin.se"
+    },
+    {
+      "id": "4",
+      "firstName": "Johan",
+      "lastName": "Karlsson",
+      "age": 23,
+      "email": "johan.karlsson@ankademin.se"
+    },
+    {
+      "id": "5",
+      "firstName": "Emma",
+      "lastName": "Larsson",
+      "age": 25,
+      "email": "emma.larsson@ankademin.se"
+    },
+    {
+      "id": "6",
+      "firstName": "Lucas",
+      "lastName": "Berg",
+      "age": 20,
+      "email": "lucas.berg@ankademin.se"
+    },
+    {
+      "id": "7",
+      "firstName": "Maja",
+      "lastName": "Lind",
+      "age": 22,
+      "email": "maja.lind@ankademin.se"
+    },
+    {
+      "id": "8",
+      "firstName": "Filip",
+      "lastName": "Svensson",
+      "age": 26,
+      "email": "filip.svensson@ankademin.se"
+    },
+    {
+      "id": "9",
+      "firstName": "Alva",
+      "lastName": "Eriksson",
+      "age": 21,
+      "email": "alva.eriksson@ankademin.se"
+    },
+    {
+      "id": "10",
+      "firstName": "Oscar",
+      "lastName": "Gustafsson",
+      "age": 23,
+      "email": "oscar.gustafsson@ankademin.se"
+    },
+    {
+      "id": "11",
+      "firstName": "Brandon",
+      "lastName": "Tsegai",
+      "age": "32",
+      "email": "brandon.tsegai@ankademin.se"
+    }
+  ]
+}

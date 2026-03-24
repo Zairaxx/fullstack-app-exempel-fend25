@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ankademin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🦆 Ankademin Studentregister</h1>
+
+    <div class="controls">
+
+        <input id="firstName" placeholder="Förnamn">
+        <input id="lastName" placeholder="Efternamn">
+        <input id="age" type="number" placeholder="Ålder">
+
+        <button id="addStudent">Lägg till elev</button>
+        <button id="sortStudents">Sortera A-Ö</button>
+
+        <button id="toggleView">Byt vy</button>
+
+    </div>
+
+    <div id="studentList" class="student-grid"></div>
+
+    <div id="editModal" class="modal">
+
+<div class="modal-content">
+
+<h2>Redigera elev</h2>
+
+<input id="editFirstName" placeholder="Förnamn">
+<input id="editLastName" placeholder="Efternamn">
+<input id="editAge" type="number" placeholder="Ålder">
+
+<div class="modal-buttons">
+<button id="saveEdit">Spara</button>
+<button id="closeModal">Avbryt</button>
+</div>
+
+</div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

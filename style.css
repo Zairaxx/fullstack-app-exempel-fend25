@@ -1,0 +1,186 @@
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #f4efe6;
+    color: #3b2f2f;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Rubriker */
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #4b3a2f;
+}
+
+/* Kontroller */
+
+.controls {
+    background: #fffaf3;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 35px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs */
+
+input {
+    padding: 10px;
+    margin: 6px;
+    border-radius: 6px;
+    border: 1px solid #d6c9b8;
+    background: #fffdf8;
+    font-size: 14px;
+}
+
+/* Knappar */
+
+button {
+    padding: 10px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 6px;
+    background: #8b5e3c;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #6e472c;
+}
+
+/* Kortvy */
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Elevkort */
+
+.student-card {
+    background: #fffaf3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 1px solid #eadfce;
+}
+
+.student-card h3 {
+    margin-top: 0;
+    color: #4b3a2f;
+}
+
+.student-card p {
+    margin: 4px 0;
+    color: #5a4a42;
+}
+
+/* Kortknappar */
+
+.card-buttons {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Specifika knappar */
+
+.delete {
+    background: #a94438;
+}
+
+.delete:hover {
+    background: #8c382d;
+}
+
+.edit {
+    background: #6a8a63;
+}
+
+.edit:hover {
+    background: #55724f;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #fffaf3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Listvy */
+/* Kompakt listvy */
+
+.student-list{
+    display:block;
+    max-width:700px;
+    margin:auto;
+}
+
+.student-list .student-card{
+    display:grid;
+    grid-template-columns:180px 60px 1fr auto;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 14px;
+    border-radius:8px;
+    margin-bottom:6px;
+
+    font-size:14px;
+}
+
+/* Ta bort stora marginaler */
+
+.student-list h3{
+    margin:0;
+    font-size:15px;
+    font-weight:600;
+}
+
+.student-list p{
+    margin:0;
+    font-size:13px;
+    color:#5a4a42;
+}
+
+/* Knappar mindre */
+
+.student-list .card-buttons{
+    margin-top:0;
+    gap:6px;
+}
+
+.student-list button{
+    padding:6px 10px;
+    font-size:12px;
+}
