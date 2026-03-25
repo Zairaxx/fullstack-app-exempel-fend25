@@ -15,10 +15,23 @@ let students = []
 // Hämta elever
 async function getStudents() {
 
+
     //GET-request - Hämta ut alla elever och ange de som argument i renderStudents.
     //Använd dig av existerande sparad url.
 
+
+    //Alternativ 1
+    // let response = await fetch(url);
+    // students = await response.json();
+
+    //Alternativ 2 (axios)
+    let response = await axios.get(url);
+    students = response.data;
+
+
+
     renderStudents(students)
+
 }
 
 getStudents()
@@ -67,11 +80,13 @@ addBtn.addEventListener("click", async () => {
         firstName,
         lastName,
         age,
-        email
+        email,
     }
 
     //LÄGG TILL POST-REQUEST
     //Variabler att använda: url, student
+
+    await axios.post("http://localhost:3000/students", student);
 
     getStudents()
 
@@ -82,6 +97,7 @@ async function deleteStudent(id) {
 
     //LÄGG TILL DELETE-REQUEST
     //Variabler att använda: url, id
+    await axios.delete(`${url}/${id}`)
 
     getStudents()
 
@@ -90,7 +106,7 @@ async function deleteStudent(id) {
 // Redigera elev
 function editStudent(id) {
 
-    const student = students.find(s => String(s.id) === String(id))
+    const student = students.find(s => s.id === id);
 
     currentStudentId = id
 
@@ -174,6 +190,8 @@ saveEdit.addEventListener("click", async () => {
 
         //LÄGG TILL PUT-REQUEST
         //Variabler att använda: url, currentStudentId, updatedStudent
+
+        await axios.put(`${url}/${currentStudentId}`, updatedStudent)
 
         modal.style.display = "none"
         currentStudentId = null

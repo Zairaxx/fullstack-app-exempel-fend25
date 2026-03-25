@@ -60,7 +60,7 @@
       "id": "9",
       "firstName": "Alva",
       "lastName": "Eriksson",
-      "age": 21,
+      "age": "22",
       "email": "alva.eriksson@ankademin.se"
     },
     {
@@ -69,13 +69,6 @@
       "lastName": "Gustafsson",
       "age": 23,
       "email": "oscar.gustafsson@ankademin.se"
-    },
-    {
-      "id": "11",
-      "firstName": "Brandon",
-      "lastName": "Tsegai",
-      "age": "32",
-      "email": "brandon.tsegai@ankademin.se"
     }
   ]
 }

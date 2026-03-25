@@ -6,7 +6,7 @@ json-server --watch db.json
 
 API: http://localhost:3000/students
 
-
+______________________________________________________________
 
 Uppgift 1: HTTP-förfrågningar
 Lägg till GET, POST, PUT och DELETE i koden med axios eller fetch.
